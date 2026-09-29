@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nordeste Viagens</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <header class="chat-header">
+            <h1>🌴 Nordeste Viagens</h1>
+            <p>Seu assistente de viagens</p>
+        </header>
+
+        <main id="chat">
+            <div class="bot-message">
+                Olá! 👋 Seja bem-vindo à Nordeste Viagens!
+                <br><br>
+                Como posso ajudar você?
+            </div>
+        </main>
+
+        <div class="options">
+
+            <button onclick="mostrarDestinos()">
+                🏖️ Destinos
+            </button>
+
+            <button onclick="mostrarPacotes()">
+                ✈️ Pacotes
+            </button>
+
+            <button onclick="mostrarDuvidas()">
+                ❓ Dúvidas
+            </button>
+
+        </div>
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Digite sua mensagem..."
+            >
+
+            <button onclick="enviarMensagem()">
+                Enviar
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
